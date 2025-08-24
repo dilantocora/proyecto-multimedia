@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Satélites de Internet - Proyecto Completo</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #1e293b;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #1e40af;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 15px;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+      padding: 30px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    section {
+      scroll-margin-top: 70px; /* para offset del nav */
+    }
+
+    section h2 {
+      color: #1e40af;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p, section ul {
+      font-size: 1.1rem;
+      color: #334155;
+      margin-bottom: 15px;
+    }
+
+    section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .image-container {
+      max-width: 100%;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .image-container img {
+  width: 600px;         /* Cambia a 700px, 500px, etc. si quieres */
+  max-width: 100%;      /* Para que siga siendo responsive en pantallas pequeñas */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+    
+
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+      border-top: 1px solid #cbd5e1;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 20px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Satélites de Internet</h1>
+    <nav>
+      <a href="#intro">Introducción</a>
+      <a href="#como-funcionan">¿Cómo funcionan?</a>
+      <a href="#starlink">Starlink</a>
+      <a href="#otros-proyectos">Otros proyectos</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#tecnologia">Tecnología</a>
+      <a href="#futuro">Futuro</a>
+    </nav>
+  </header>
+
+  <main>
+  <main>
+  <section id="intro">
+    <h2>Introducción a los Satélites de Internet</h2>
+    <p>Los satélites de internet representan una innovadora solución tecnológica para conectar el mundo desde el espacio. Estos dispositivos, ubicados en órbitas específicas alrededor de la Tierra, transmiten señales que permiten ofrecer acceso a internet en áreas donde la infraestructura terrestre es limitada o inexistente.</p>
+    
+    <p>La importancia de los satélites radica en su capacidad para superar barreras geográficas, facilitando la conectividad en zonas rurales, marítimas y regiones remotas. Además, juegan un papel crucial en emergencias y desastres naturales, donde las redes tradicionales pueden fallar.</p>
+    
+    <p>Con el avance de la tecnología y la proliferación de constelaciones de satélites de órbita baja (LEO), el internet satelital está logrando velocidades más altas y latencias reducidas, acercándose a la calidad de las conexiones terrestres convencionales.</p>
+    
+    <div class="image-container">
+      <img src="elon.jpg" alt="Constelación de satélites de internet" />
+    </div>
+  </section>
+<section id="como-funcionan">
+  <h2>¿Cómo funcionan los Satélites de Internet?</h2>
+  
+  <p>Los satélites de internet funcionan como repetidores espaciales que reciben señales desde estaciones en la Tierra y las retransmiten a otras estaciones o directamente a los usuarios. Utilizan ondas de radio para enviar datos a través del espacio, permitiendo establecer conexiones a internet sin necesidad de cables o infraestructura física en tierra.</p>
+  
+  <p>En los sistemas más modernos, como Starlink, los satélites operan en <strong>órbita terrestre baja (LEO)</strong>, a una altitud aproximada de 550 km. Esta proximidad permite reducir significativamente la latencia —el tiempo que tarda la información en viajar de un punto a otro—, logrando velocidades de conexión más rápidas y estables.</p>
+
+  <p>Los satélites se comunican entre sí mediante enlaces láser (comunicación intersatelital), lo que permite enrutar los datos de manera eficiente a través del espacio antes de enviarlos al usuario final. En tierra, los usuarios necesitan una antena especial (terminal) que rastrea y se conecta automáticamente con los satélites en movimiento.</p>
+
+  <div class="image-container">
+    <img src="iimag.jpg" alt="Diagrama del funcionamiento de satélites Starlink" />
+  </div>
+</section>
+<section id="starlink">
+  <h2>Starlink: Un Caso Destacado</h2>
+
+  <p><strong>Starlink</strong> es un ambicioso proyecto de SpaceX, la empresa aeroespacial fundada por Elon Musk, que tiene como objetivo crear una constelación global de satélites de órbita baja para ofrecer acceso a internet de alta velocidad en cualquier parte del mundo.</p>
+
+  <p>Desde su lanzamiento en 2019, Starlink ha desplegado más de 6,000 satélites, convirtiéndose en la red de satélites comerciales más grande del planeta. A diferencia de los satélites geoestacionarios, que están a unos 36,000 km de altura, los satélites de Starlink operan a solo 550 km, lo que permite ofrecer conexiones más rápidas y con menor latencia.</p>
+
+  <p>El servicio de Starlink ya está disponible en decenas de países, y se utiliza tanto en hogares rurales como en barcos, aviones y zonas de emergencia. Su diseño modular y escalable permite seguir aumentando la cobertura global a medida que se lanzan nuevos satélites.</p>
+
+  <p><strong>Principales características de Starlink:</strong></p>
+  <ul>
+    <li>Velocidades de descarga entre 50 y 250 Mbps (en expansión).</li>
+    <li>Latencia baja: entre 20 y 40 ms, ideal para videollamadas y juegos en línea.</li>
+    <li>Fácil instalación con una antena receptora automática.</li>
+    <li>Funciona en zonas donde otras tecnologías no llegan.</li>
+  </ul>
+
+  <div class="image-container">
+    <img src="starlink.jpg" alt="Satélites Starlink desplegados en órbita" />
+  </div>
+</section>
+<section id="otros-proyectos">
+  <h2>Otros Proyectos Importantes</h2>
+
+  <p>Además de Starlink, existen otros proyectos y empresas que también están desarrollando constelaciones de satélites con el objetivo de brindar acceso a internet a nivel global. Estos esfuerzos reflejan la creciente competencia y la importancia estratégica de la conectividad satelital en el siglo XXI.</p>
+
+  <p>A continuación, algunos de los proyectos más destacados:</p>
+
+  <ul>
+    <li>
+      <strong>OneWeb:</strong> Una empresa británica que planea lanzar más de 600 satélites de órbita baja para ofrecer internet de alta velocidad a zonas rurales, marítimas y regiones en desarrollo. Ha enfocado sus esfuerzos en alianzas con gobiernos y operadores regionales.
+    </li>
+    <li>
+      <strong>Project Kuiper (Amazon):</strong> Iniciativa de Amazon para desplegar más de 3,000 satélites LEO. Su objetivo es ofrecer internet de alta velocidad en todo el mundo, con énfasis en mercados no atendidos y productos integrados con la nube de Amazon (AWS).
+    </li>
+    <li>
+      <strong>Telesat Lightspeed:</strong> Proyecto de la empresa canadiense Telesat, enfocado en soluciones empresariales, movilidad aérea y marítima. Se basa en una red de satélites LEO con enlaces ópticos avanzados.
+    </li>
+  </ul>
+
+  <div class="image-container">
+    <img src="proyectos.jpg" alt="Ilustración de constelaciones de satélites OneWeb" />
+  </div>
+</section>
+<section id="impacto">
+  <h2>Impacto Social y Económico</h2>
+
+  <p>La expansión de las redes de satélites de internet está generando un profundo impacto en la sociedad, especialmente en regiones donde el acceso a la conectividad tradicional ha sido históricamente limitado o inexistente. Esta tecnología no solo reduce la brecha digital, sino que también transforma vidas, abre nuevas oportunidades y mejora la calidad de vida de millones de personas.</p>
+
+  <p><strong>Principales beneficios sociales y económicos:</strong></p>
+
+  <ul>
+    <li><strong>Educación:</strong> Estudiantes en zonas rurales pueden acceder a plataformas educativas, recursos en línea y clases virtuales, reduciendo desigualdades en el aprendizaje.</li>
+    <li><strong>Salud:</strong> La telemedicina se vuelve posible, permitiendo diagnósticos, monitoreo y atención médica remota en comunidades aisladas.</li>
+    <li><strong>Desarrollo económico:</strong> Pequeños negocios y emprendedores acceden a mercados digitales, servicios financieros en línea y herramientas de gestión que antes eran inaccesibles.</li>
+    <li><strong>Conectividad en emergencias:</strong> En situaciones de desastre natural o conflicto, los satélites permiten restablecer comunicaciones críticas rápidamente.</li>
+  </ul>
+
+  <p>Sin embargo, también existen desafíos. El alto costo inicial, la necesidad de equipos especializados y la preocupación por la basura espacial y el impacto ambiental de los lanzamientos son aspectos que deben abordarse a medida que esta tecnología se expande.</p>
+
+  </div>
+</section>
+<section id="tecnologia">
+  <h2>Tecnología detrás de los Satélites</h2>
+
+  <p>Los satélites de internet utilizan una combinación de tecnologías avanzadas que permiten la transmisión eficiente y rápida de datos a través del espacio. Estas tecnologías han evolucionado significativamente en los últimos años, permitiendo conexiones más estables, rápidas y con menor latencia.</p>
+
+  <p><strong>Principales componentes tecnológicos:</strong></p>
+
+  <ul>
+    <li><strong>Órbita terrestre baja (LEO):</strong> Al operar a unos 500 a 1,200 km de altitud, los satélites LEO ofrecen menor latencia y una mejor calidad de conexión que los satélites geoestacionarios, que están a 36,000 km.</li>
+    <li><strong>Terminales de usuario inteligentes:</strong> Las antenas de usuario (como las de Starlink) utilizan seguimiento automático para mantenerse conectadas con satélites en movimiento, sin necesidad de ajustes manuales.</li>
+    <li><strong>Enlaces láser entre satélites:</strong> Algunos satélites se comunican entre sí mediante láseres, lo que permite enrutar el tráfico de datos por el espacio sin depender completamente de estaciones terrestres.</li>
+    <li><strong>Antenas de fase activa (phased array):</strong> Estas antenas electrónicas pueden cambiar su dirección de transmisión sin necesidad de movimiento físico, lo que mejora la velocidad de conexión.</li>
+    <li><strong>Estaciones terrestres (gateways):</strong> Son puntos en la Tierra que conectan la red satelital con la red de internet global, actuando como puentes entre el cielo y los servidores centrales.</li>
+  </ul>
+
+  <p>Gracias a estos avances, los satélites modernos pueden ofrecer un rendimiento comparable al de la fibra óptica en muchas situaciones, abriendo nuevas posibilidades para usuarios residenciales, empresas y gobiernos.</p>
+
+  <div class="image-container">
+    <img src="tec.jpg" alt="Diagrama de antena de fase activa" />
+  </div>
+</section>
+<section id="futuro">
+  <h2>El Futuro de los Satélites de Internet</h2>
+
+  <p>El futuro del internet satelital es prometedor. A medida que más empresas invierten en tecnologías espaciales, se espera una expansión significativa de la cobertura, mayores velocidades y una reducción en los costos para los usuarios finales.</p>
+
+  <p>Starlink planea superar los 12,000 satélites en los próximos años, y otras iniciativas como Amazon Kuiper y OneWeb también continuarán expandiendo sus redes. Esto permitirá una conectividad casi global, incluyendo océanos, desiertos y regiones polares.</p>
+
+  <p><strong>Avances esperados en los próximos años:</strong></p>
+  <ul>
+    <li>Mayor integración con redes 5G y tecnologías IoT (Internet de las Cosas).</li>
+    <li>Terminales más compactos, económicos y fáciles de instalar.</li>
+    <li>Uso de inteligencia artificial para gestión de tráfico y control satelital.</li>
+    <li>Expansión de servicios en movilidad: aviones, barcos, vehículos autónomos.</li>
+    <li>Reducción de la latencia a niveles similares a los de la fibra óptica.</li>
+  </ul>
+
+  <p>No obstante, también surgirán desafíos importantes: la gestión del tráfico espacial, el control de la basura orbital, las regulaciones internacionales y el impacto ambiental de los lanzamientos serán temas críticos a resolver.</p>
+
+  <p>Aun así, los satélites de internet están destinados a desempeñar un papel clave en el acceso universal a la información, acercando el mundo digital a todos los rincones del planeta.</p>
+
+  <div class="image-container">
+    <img src="futuro.jpg" alt="Constelación de satélites en el futuro" />
+  </div>
+</section>
+
+</main>
+
+  </main>
+
+  <footer>
+    &copy; proyecto presentado por: Dilan Tocora Londoño
+  </footer>
+
+</body>
+</html>
+
+
+
+
